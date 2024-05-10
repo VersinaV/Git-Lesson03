@@ -1,4 +1,18 @@
-body{
-    background-color: rgb(64, 64, 70);
-    color: rgb(255, 255, 255);
+body {
+    background-color: #4b4b4b;
+    color: white;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap; /* Добавляем wrap для автоматического переноса дочерних элементов на новую строку при необходимости */
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.box div {
+    width: calc(33.33% - 10px); /* Рассчитываем ширину элементов div в контейнере box с учетом промежутка gap */
+    height: 150px; /* Устанавливаем фиксированную высоту для элементов div */
+    border: 4px solid white;
+    box-sizing: border-box;
 }
